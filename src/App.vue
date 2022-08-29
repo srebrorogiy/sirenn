@@ -14,13 +14,9 @@ export default class Test extends Vue {
 
 </script>
 <template>
-  <div id="app">
+  <div class="app">
     {{ message }}
     <MainWrapper />
   </div>
 
 </template>
-
-<style lang="scss">
-
-</style>

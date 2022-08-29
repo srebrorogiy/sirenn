@@ -34,7 +34,7 @@ export default class MainBlock extends Vue {
 
 <style lang="scss">
 .container {
-  background-color: antiquewhite;
+
   width: 1140px;
 }
 

@@ -1,0 +1,28 @@
+//@font-face {
+//    font-family: "1-font";
+//    src: url(../assets/fonts/);
+//}
+//
+//@font-face {
+//    font-family: "2-font";
+//    src: url(../assets/fonts/);
+//}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: rgb(236, 104, 126);
+    color: rgb(179, 238, 91);
+}
+
+.container-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}

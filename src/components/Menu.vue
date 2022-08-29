@@ -1,6 +1,8 @@
 <template>
   <div class="menu-item">
-    <p>{{ menubar }}</p>
+      <div class="header_nav">
+        <p>{{ menubar }}</p>
+      </div>
   </div>
 </template>
 
@@ -18,4 +20,10 @@ export default class MenuBlock extends Vue {
     menubar = 'Menu';
 }
 
-</script>+
+</script>
+
+<style lang="scss">
+.header_nav {
+  
+}
+</style>

@@ -1,9 +1,11 @@
 <template>
   <div class="main-block">
-    <p>{{ main_title }}</p>
-    <HeaderBlock />
-    <MainBlock />
-    <FooterBlock />
+    <div class="container-flex">
+      <p>{{ main_title }}</p>
+      <HeaderBlock />
+      <MainBlock />
+      <FooterBlock />
+    </div>
   </div>
 </template>
 
@@ -31,12 +33,4 @@ export default class MainWrapper extends Vue {
 }
 </script>
 
-<style>
-.main-block {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0;
-}
-</style>
 
