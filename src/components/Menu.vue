@@ -23,7 +23,5 @@ export default class MenuBlock extends Vue {
 </script>
 
 <style lang="scss">
-.header_nav {
-  
-}
+
 </style>
