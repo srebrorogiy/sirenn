@@ -5,7 +5,7 @@
         <div class="flex">
           <div class="search_container">
             <div class="styles_search">
-            <Search />
+              <Search />
             </div>
           </div>
           <div class="menu_container">
@@ -50,7 +50,7 @@ export default class HeaderBlock extends Vue {
 }
 
 .styles_header-block {
- padding-top: 1rem;
- padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 </style>

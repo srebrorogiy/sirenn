@@ -11,31 +11,28 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import Component from 'vue-class-component';
-import Suggestions from './Suggestions.vue';
-import Wishlist from './Wishlist.vue';
-import CategoryMovies from './CategoryMovies.vue';
-import CategorySerials from './CategorySerials.vue';
+import Vue from "vue";
+import Component from "vue-class-component";
+import Suggestions from "./Suggestions.vue";
+import Wishlist from "./Wishlist.vue";
+import CategoryMovies from "./CategoryMovies.vue";
+import CategorySerials from "./CategorySerials.vue";
 
-@Component ({
+@Component({
   components: {
     Suggestions,
     Wishlist,
     CategoryMovies,
-    CategorySerials
-  }
+    CategorySerials,
+  },
 })
-
 export default class MainBlock extends Vue {
-  name = 'blockContent'
+  name = "blockContent";
 }
 </script>
 
 <style lang="scss">
 .container {
-
   width: 1140px;
 }
-
 </style>
