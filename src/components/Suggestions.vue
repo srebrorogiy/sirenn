@@ -8,8 +8,10 @@
         <div class="styles_carousel">
           <div class="container_carousel-flex">
             <div v-for="currency in info" class="currency">
-              <p>{{ currency.fullTitle }}</p>
               <img v-bind:src="currency.image" class="style-poster" />
+              <div class="style_title">
+                <p>{{ currency.fullTitle }}</p>
+              </div>
             </div>
           </div>
         </div>
@@ -44,17 +46,38 @@ export default class SuggestBlock extends Vue {
 </script>
 
 <style lang="scss">
+h2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .container_carousel-flex {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  .style-poster {
-    top: 0;
-    bottom: 0;
-    position: relative;
-    width: 100%;
-    height: auto;
+  flex-wrap: wrap;
+  .currency {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    display: inline-block;
+    flex-direction: column;
+    .style_title {
+      align-items: center;
+      
+      display: block;
+      width: 140px;
+    }
+    .style-poster {
+      border-radius: 5px;
+      top: 0;
+      bottom: 0;
+      // position: relative;
+      width: 140px;
+      min-width: 140px;
+      height: auto;
+    }
   }
 }
 </style>

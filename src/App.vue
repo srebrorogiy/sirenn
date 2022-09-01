@@ -14,7 +14,7 @@ interface MovieItem {
   },
 })
 export default class Test extends Vue {
-  message: string = "Films";
+  message = "Films";
 }
 </script>
 

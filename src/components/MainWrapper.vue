@@ -1,7 +1,7 @@
 <template>
   <div class="main-block">
     <div class="container-flex">
-      <p>{{ main_title }}</p>
+      <!-- <p>{{ main_title }}</p> -->
       <HeaderBlock />
       <MainBlock />
       <FooterBlock />
