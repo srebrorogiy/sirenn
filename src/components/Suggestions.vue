@@ -47,16 +47,17 @@ export default class SuggestBlock extends Vue {
 
 <style lang="scss">
 h2 {
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
 .container_carousel-flex {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  // align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
+  overflow-wrap:break-word;
   .currency {
     margin-right: 20px;
     margin-bottom: 10px;

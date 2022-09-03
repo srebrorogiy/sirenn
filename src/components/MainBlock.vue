@@ -1,7 +1,6 @@
 <template>
   <div class="block-content">
     <div class="container">
-      <h1>Main content</h1>
       <Suggestions />
       <Wishlist />
       <CategoryMovies />

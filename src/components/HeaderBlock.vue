@@ -38,9 +38,13 @@ export default class HeaderBlock extends Vue {
 .header-block {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  background-color: rgb(204, 94, 112);
+  width: 1140px;
+  align-content: center;
   .container {
-    width: 1140px;
+    // width: 100%;
     .flex {
+      // width: 1140px;
       display: flex;
       align-items: center;
       flex-direction: row-reverse;
