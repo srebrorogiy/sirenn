@@ -2,7 +2,7 @@
   <div class="footer-block">
     <div class="container">
       <div class="footer-flex">
-        <h1>Footer</h1>
+        <!-- <h1>Footer</h1> -->
         <div class="footer_contacts">
           <Contacts />
         </div>
@@ -29,5 +29,7 @@ export default class FooterBlock extends Vue {
 <style lang="scss">
 .footer-block {
   margin-top: 1rem;
+  // background-color: rgb(36, 6, 15);
+  align-content: center;
 }
 </style>

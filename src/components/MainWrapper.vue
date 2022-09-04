@@ -7,7 +7,11 @@
         </div>
       </header>
       <MainBlock />
-      <FooterBlock />
+      <footer>
+        <div class="container_flex_footer">
+          <FooterBlock />
+        </div>
+      </footer>
     </div>
   </div>
 </template>
@@ -35,8 +39,7 @@ export default class MainWrapper extends Vue {
 
 <style lang="scss">
 
-header {
-  background-color: rgb(204, 94, 112);
+header {     
   width: 100%;
   .container_flex_head {
     display: flex;
@@ -47,6 +50,20 @@ header {
     margin-left: auto;
     margin-right: auto;
 
+  }
+}
+
+footer {
+  background: rgb(212,112,47);
+  background: linear-gradient(152deg, rgba(212,112,47,1) 0%, rgba(251,80,130,1) 48%, rgba(255,113,113,1) 100%);
+  width: 100%;
+  // margin: 2rem;
+  .container_flex_footer {
+    display: flex;
+    flex-direction: row;
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 </style>

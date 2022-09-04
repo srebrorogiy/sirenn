@@ -2,7 +2,6 @@
   <div class="block-suggest">
     <div class="container">
       <h2>Movie suggestions</h2>
-
       <section>
         <h2>Top250Movies</h2>
         <div class="styles_carousel">
@@ -13,7 +12,16 @@
                 <p>{{ currency.fullTitle }}</p>
               </div>
             </div>
+            <button class="carousel-buttonRight">
+              <span class="styles_iconRight">prev</span>
+            </button>
+            <button class="carousel-buttonLeft">
+              <span class="styles_iconLeft">next</span>
+            </button>
+
           </div>
+  
+        
         </div>
       </section>
 
@@ -50,14 +58,24 @@ h2 {
   margin-top: 30px;
   margin-bottom: 20px;
 }
-
+section {
+  background-color: rgb(255, 246, 248);
+  margin: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  border-radius: 10px;
+  box-shadow: inset 5em 1em gold;
+  box-shadow: 7px 5px 5px rgb(210, 193, 255);
+}
 .container_carousel-flex {
   display: flex;
   flex-direction: row;
   // align-items: center;
   justify-content: space-between;
   // flex-wrap: wrap;
-  overflow-wrap:break-word;
+  // overflow-wrap:break-word;
+  overflow-block: hidden;
   .currency {
     margin-right: 20px;
     margin-bottom: 10px;
@@ -66,7 +84,6 @@ h2 {
     flex-direction: column;
     .style_title {
       align-items: center;
-      
       display: block;
       width: 140px;
     }
