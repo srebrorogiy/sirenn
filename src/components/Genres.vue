@@ -1,15 +1,15 @@
 <template>
   <div class="block-suggest">
     <div class="container">
-      <h2>Movie suggestions</h2>
       <section>
-        <h2>In theaters</h2>
+        <h2>genres</h2>
         <div class="styles_carousel">
           <div class="container_carousel-flex">
             <div v-for="currency in info" :key="currency.id" class="currency">
-              <img v-bind:src="currency.image" class="style-poster" />
+              <!-- <img v-bind:src="currency.image" class="style-poster" /> -->
               <div class="style_title">
-                <p>{{ currency.fullTitle }}</p>
+                <p>{{ currency.name }}</p>
+                <!-- <p>{{ info }}</p> -->
               </div>
             </div>
             <button class="carousel-buttonRight">
@@ -35,7 +35,7 @@ import Component from "vue-class-component";
 import axios, { AxiosResponse } from "axios";
 
 @Component({})
-export default class SuggestBlock extends Vue {
+export default class GenresBlock extends Vue {
   name = "blockSuggest";
 
   // eslint-disable-next-line no-undef
@@ -44,8 +44,11 @@ export default class SuggestBlock extends Vue {
 
   mounted() {
     axios
-      .get("https://imdb-api.com/en/API/InTheaters/k_12itu7xr")
-      .then((response) => (this.info = response.data.items));
+      // .get("https://imdb-api.com/en/API/InTheaters/k_12itu7xr")
+      .get(
+        "https://api.themoviedb.org/3/genre/movie/list?api_key=e765f2fdbe2f58437bef4c2f82b039ce&language=ru"
+      )
+      .then((response) => (this.info = response.data.genres));
     return this.info;
   }
 

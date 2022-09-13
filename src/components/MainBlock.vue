@@ -5,6 +5,7 @@
       <Wishlist />
       <CategoryMovies />
       <CategorySerials />
+      <Genres />
     </div>
   </div>
 </template>
@@ -16,6 +17,7 @@ import Suggestions from "./Suggestions.vue";
 import Wishlist from "./Wishlist.vue";
 import CategoryMovies from "./CategoryMovies.vue";
 import CategorySerials from "./CategorySerials.vue";
+import Genres from "./Genres.vue";
 
 @Component({
   components: {
@@ -23,6 +25,7 @@ import CategorySerials from "./CategorySerials.vue";
     Wishlist,
     CategoryMovies,
     CategorySerials,
+    Genres,
   },
 })
 export default class MainBlock extends Vue {

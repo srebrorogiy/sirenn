@@ -41,6 +41,13 @@ export default class MainWrapper extends Vue {
 
 header {     
   width: 100%;
+   position: fixed;
+   margin-top: 60px;
+  height: 60px;
+  background: #fff;
+  // z-index: 1000;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   .container_flex_head {
     display: flex;
     flex-direction: row;
