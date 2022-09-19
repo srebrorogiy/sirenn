@@ -1,7 +1,9 @@
 <template>
   <div class="menu-item">
       <div class="header_nav">
-        <p>{{ menubar }}</p>
+        <router-link :to="{name: 'main-block'}">
+          <p>{{ menubar }}</p>
+        </router-link>
       </div>
   </div>
 </template>

@@ -41,10 +41,10 @@ export default class MainWrapper extends Vue {
 
 header {     
   width: 100%;
-   position: fixed;
-   margin-top: 60px;
+  //  position: fixed;
+  //  margin-top: 60px;
   height: 60px;
-  background: #fff;
+  // background: #fff;
   // z-index: 1000;
   padding-top: 1rem;
   padding-bottom: 1rem;

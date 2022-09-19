@@ -7,6 +7,7 @@
             class="search-input"
             type="text"
             placeholder="Фильмы, сериалы"
+            v-model="searchValue"
           />
           <span class="search-button">
             <svg
@@ -31,17 +32,31 @@
 </template>
 
 <script lang="ts">
+import axios from "axios";
 import Vue from "vue";
 import Component from "vue-class-component";
-import Suggestions from "./Suggestions.vue";
+
+const Search = Vue.extend ({
+  props: {
+    movies: [],
+    genres: [],
+    
+  },
+})
 
 @Component({})
-export default class SearchBlock extends Vue {
+export default class SearchBlock extends Search {
   name = "searchItem";
+  searchValue: string = '';
 
-  methods: {
-    getMovies();
-  };
+  mounted() {
+    axios
+      .get(
+        'https://imdb-api.com/en/API/SearchMovie/k_12itu7xr/'
+      )
+      .then((response) => (this.movies = response.data.items));
+    return this.movies;
+  }
 }
 </script>
 
