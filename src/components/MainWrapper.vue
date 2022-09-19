@@ -2,9 +2,7 @@
   <div class="main-block">
     <div class="container-flex">
       <header>
-        <div class="container_flex_head">
-          <HeaderBlock />
-        </div>
+        <HeaderBlock />
       </header>
       <MainBlock />
       <footer>
@@ -38,31 +36,40 @@ export default class MainWrapper extends Vue {
 </script>
 
 <style lang="scss">
-
-header {     
+header {
   width: 100%;
+<<<<<<< HEAD
   //  position: fixed;
   //  margin-top: 60px;
   height: 60px;
+=======
+  // position: fixed;
+  // margin-top: 60px;
+  // height: 60px;
+>>>>>>> 920f31c (header and block size)
   // background: #fff;
   // z-index: 1000;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  .container_flex_head {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
-
+  // padding-top: 1rem;
+  // padding-bottom: 1rem;
+  // .container_flex_head {
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-between;
+  // align-items: center;
+  // width: 1140px;
+  // margin-left: auto;
+  // margin-right: auto;
   }
-}
+
 
 footer {
-  background: rgb(212,112,47);
-  background: linear-gradient(152deg, rgba(212,112,47,1) 0%, rgba(251,80,130,1) 48%, rgba(255,113,113,1) 100%);
+  background: rgb(212, 112, 47);
+  background: linear-gradient(
+    152deg,
+    rgba(212, 112, 47, 1) 0%,
+    rgba(251, 80, 130, 1) 48%,
+    rgba(255, 113, 113, 1) 100%
+  );
   width: 100%;
   // margin: 2rem;
   .container_flex_footer {

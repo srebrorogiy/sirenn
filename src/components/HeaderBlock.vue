@@ -1,5 +1,5 @@
 <template>
-  <div class="header-block">
+  <div class="header scroll">
     <div class="container">
       <div class="styles_header-block">
         <div class="flex">
@@ -35,7 +35,10 @@ export default class HeaderBlock extends Vue {
 </script>
 
 <style lang="scss">
-header {
+.header {
+  top: 0px;
+}  
+/**header {
  
 
   .header-block {
@@ -59,5 +62,5 @@ header {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
-}
+}**/
 </style>

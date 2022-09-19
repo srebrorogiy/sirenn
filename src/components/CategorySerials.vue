@@ -23,7 +23,7 @@ export default class Serials extends Vue {
   mounted() {
     axios
       .get(
-        "https://api.themoviedb.org/3/tv/top_rated?api_key=e765f2fdbe2f58437bef4c2f82b039ce&language=ru&page=1"
+        "https://api.themoviedb.org/3/tv/top_rated?_limit=10&api_key=e765f2fdbe2f58437bef4c2f82b039ce&language=ru&page=1"
       )
       .then((response) => (this.itemSerials = response.data.results));
     return this.itemSerials;

@@ -34,6 +34,10 @@ export default class MainBlock extends Vue {
 </script>
 
 <style lang="scss">
+.block-content {
+  flex: 1;
+}
+
 .container {
   width: 1140px;
 }
