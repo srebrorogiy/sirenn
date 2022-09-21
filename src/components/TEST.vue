@@ -13,8 +13,8 @@ import Vue from "vue";
 import Component from "vue-class-component";
 
 @Component({})
-export default class MenuBlock extends Vue {
-  name = "menuItem";
+export default class Test extends Vue {
+  name = "itemTest";
 
   menubar = "Menu";
 }

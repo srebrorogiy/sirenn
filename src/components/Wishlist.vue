@@ -7,12 +7,12 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
+import Vue from "vue";
 
 export default class Wishlist extends Vue {
-  name = 'blockWishlist';
+  name = "blockWishlist";
 
-  list = 'Что хотели посмотреть'
+  list = "Что хотели посмотреть";
 }
 </script>
 
@@ -22,5 +22,4 @@ export default class Wishlist extends Vue {
   align-items: center;
   flex-direction: column;
 }
-
 </style>

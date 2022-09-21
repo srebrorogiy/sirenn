@@ -1,7 +1,9 @@
 <template>
   <div class="categoty-serials">
     <div class="container-category-seri">
-      <h3>все сериалы</h3>
+      <h3>
+        <router-link :to="{ name: 'itemTest' }"> все сериалы </router-link>
+      </h3>
       <div v-for="item2 in itemSerials" :key="item2.id">
         <p>{{ item2.name }}</p>
       </div>

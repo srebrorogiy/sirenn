@@ -38,15 +38,12 @@ export default class MainWrapper extends Vue {
 <style lang="scss">
 header {
   width: 100%;
-<<<<<<< HEAD
   //  position: fixed;
   //  margin-top: 60px;
   height: 60px;
-=======
   // position: fixed;
   // margin-top: 60px;
   // height: 60px;
->>>>>>> 920f31c (header and block size)
   // background: #fff;
   // z-index: 1000;
   // padding-top: 1rem;
@@ -59,8 +56,7 @@ header {
   // width: 1140px;
   // margin-left: auto;
   // margin-right: auto;
-  }
-
+}
 
 footer {
   background: rgb(212, 112, 47);

@@ -3,13 +3,13 @@
     <div class="container">
       <div class="styles_header-block">
         <div class="flex">
+          <div class="menu_container">
+            <Menu />
+          </div>
           <div class="search_container">
             <div class="styles_search">
               <Search />
             </div>
-          </div>
-          <div class="menu_container">
-            <Menu />
           </div>
         </div>
       </div>
@@ -37,7 +37,19 @@ export default class HeaderBlock extends Vue {
 <style lang="scss">
 .header {
   top: 0px;
-}  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
 /**header {
  
 

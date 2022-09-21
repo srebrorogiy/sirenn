@@ -2,14 +2,14 @@
   <div class="categoty-movies">
     <div class="container-category-mov">
       <!-- <img v-if="" :src="" alt="" /> -->
-      
+
       <h3 v-on:click="getAllMovies">все фильмы</h3>
       <!-- <P>{{movie}}</P> -->
-      
+
       <div v-for="item in movie" :key="item.id">
         <p>{{ item.title }}</p>
         <p>{{ item.rank }}</p>
-        <img :src="item.image" alt="poster">
+        <img :src="item.image" alt="poster" />
       </div>
     </div>
   </div>
@@ -39,9 +39,7 @@ export default class Movies extends MoviesProps {
 
   mounted() {
     axios
-      .get(
-        "https://imdb-api.com/en/API/Top250Movies/k_12itu7xr"
-      )
+      .get("https://imdb-api.com/en/API/Top250Movies/k_12itu7xr")
       .then((response) => (this.movie = response.data.items));
     return this.movie;
   }

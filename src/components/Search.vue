@@ -36,24 +36,21 @@ import axios from "axios";
 import Vue from "vue";
 import Component from "vue-class-component";
 
-const Search = Vue.extend ({
+const Search = Vue.extend({
   props: {
     movies: [],
     genres: [],
-    
   },
-})
+});
 
 @Component({})
 export default class SearchBlock extends Search {
   name = "searchItem";
-  searchValue: string = '';
+  searchValue = "";
 
   mounted() {
     axios
-      .get(
-        'https://imdb-api.com/en/API/SearchMovie/k_12itu7xr/'
-      )
+      .get("https://imdb-api.com/en/API/SearchMovie/k_12itu7xr/")
       .then((response) => (this.movies = response.data.items));
     return this.movies;
   }

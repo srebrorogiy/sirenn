@@ -7,7 +7,6 @@
           <div class="container">
             <p>inst</p>
             <p>tg</p>
-
           </div>
         </div>
       </div>
@@ -16,34 +15,28 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import Component from 'vue-class-component';
+import Vue from "vue";
+import Component from "vue-class-component";
 
-@Component ({
-
-})
-
+@Component({})
 export default class ContactsBlock extends Vue {
-    name = 'contactsItem';
+  name = "contactsItem";
 
-    contact = 'Контакты для связи';
+  contact = "Контакты для связи";
 }
 </script>
 
 <style lang="scss">
-  h3 {
-     margin-bottom: 20px;
-     margin-top: 15px;
+h3 {
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
 
-  }
-
-  .footer_socials {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
-    margin-bottom: 20px;
-
-  }
-
+.footer_socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 20px;
+}
 </style>
