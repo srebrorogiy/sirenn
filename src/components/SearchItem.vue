@@ -36,7 +36,7 @@ import axios from "axios";
 import Vue from "vue";
 import Component from "vue-class-component";
 
-const Search = Vue.extend({
+const SearchItem = Vue.extend({
   props: {
     movies: [],
     genres: [],
@@ -44,8 +44,8 @@ const Search = Vue.extend({
 });
 
 @Component({})
-export default class SearchBlock extends Search {
-  name = "searchItem";
+export default class SearchBlock extends SearchItem {
+  name = "SearchItem";
   searchValue = "";
 
   mounted() {

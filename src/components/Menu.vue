@@ -2,7 +2,7 @@
   <div class="menu-item">
     <div class="header_nav">
       <router-link :to="{ name: 'main-block' }">
-        <p>{{ menubar }}</p>
+        <p class="nav-menu">{{ menubar }}</p>
       </router-link>
     </div>
   </div>
@@ -20,4 +20,8 @@ export default class MenuBlock extends Vue {
 }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+p {
+  text-decoration: none;
+}
+</style>

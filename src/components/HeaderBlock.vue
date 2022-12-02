@@ -8,7 +8,7 @@
           </div>
           <div class="search_container">
             <div class="styles_search">
-              <Search />
+              <SearchItem />
             </div>
           </div>
         </div>
@@ -20,12 +20,12 @@
 <script lang="ts">
 import Vue from "vue";
 import Component from "vue-class-component";
-import Search from "./Search.vue";
+import SearchItem from "./SearchItem.vue";
 import Menu from "./Menu.vue";
 
 @Component({
   components: {
-    Search,
+    SearchItem,
     Menu,
   },
 })

@@ -1,12 +1,16 @@
 <template>
   <div class="block-suggest">
     <div class="container">
-      <h2>Movie suggestions</h2>
+      <h1>Рекомендуем к просмотру</h1>
       <section>
-        <h2>In theaters</h2>
+        <h2>В кино</h2>
         <div class="styles_carousel">
           <div class="container_carousel-flex">
-            <div v-for="currency in info" :key="currency.id" class="currency">
+            <div
+              v-for="currency in info.slice(0, 14)"
+              :key="currency.id"
+              class="currency"
+            >
               <img v-bind:src="currency.image" class="style-poster" />
               <div class="style_title">
                 <p>{{ currency.fullTitle }}</p>
@@ -41,6 +45,11 @@ export default class SuggestBlock extends Vue {
   // eslint-disable-next-line no-undef
   info: any = null;
   // poster: any = poster;
+  data() {
+    return {
+      info: [],
+    };
+  }
 
   mounted() {
     axios
@@ -56,8 +65,12 @@ export default class SuggestBlock extends Vue {
 </script>
 
 <style lang="scss">
+h1 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
 h2 {
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 section {
@@ -66,6 +79,7 @@ section {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
+  padding-bottom: 20px;
   border-radius: 10px;
   box-shadow: inset 5em 1em gold;
   box-shadow: 7px 5px 5px rgb(210, 193, 255);
@@ -89,15 +103,15 @@ section {
       display: block;
       width: 140px;
     }
-    .style-poster {
-      border-radius: 5px;
-      top: 0;
-      bottom: 0;
-      // position: relative;
-      width: 140px;
-      min-width: 140px;
-      height: auto;
-    }
+    // .style-poster {
+    //   border-radius: 5px;
+    //   top: 0;
+    //   bottom: 0;
+    //   // position: relative;
+    //   width: 140px;
+    //   min-width: 140px;
+    //   height: auto;
+    // }
   }
 }
 </style>

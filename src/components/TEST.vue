@@ -1,9 +1,10 @@
 <template>
   <div class="menu-item">
     <div class="header_nav">
-      <router-link :to="{ name: 'main-block' }">
-        <p>{{ menubar }}</p>
-      </router-link>
+      <!-- <router-link :to="{ name: 'main-block' }"> -->
+      <p>{{ menubar }}</p>
+      <p>test</p>
+      <!-- </router-link> -->
     </div>
   </div>
 </template>
