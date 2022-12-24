@@ -140,20 +140,6 @@ export default class MenuBlock extends Vue {
 </script>
 
 <style lang="scss">
-// p {
-//   text-decoration: none;
-// }
-
-// .nav-menu {
-//   text-decoration: none;
-// }
-
-// .dropdown__menu-text {
-//   text-decoration: none;
-// }
-
-
-
 
 *,
 ::after,
@@ -161,35 +147,20 @@ export default class MenuBlock extends Vue {
   box-sizing: border-box;
 }
 
-// body {
-//   font-size: 1rem;
-//   -webkit-text-size-adjust: 100%;
-//   font-family: var(--font-primary);
-//   overflow: hidden;
-// }
-
 hr {
   border: 1px;
   height: 1px;
   margin: 1rem 0;
-  // border-top: 1px solid var(--color-gray);
   border-top: 1px solid #eb4863;
 }
-
-// li {
-//   text-decoration: none;
-// }
 
 // Header Menu
 
 .header {
-  // padding: 2rem 5rem 2rem 5rem;
 
   &__nav {
-    margin: 0;
     position: relative;
-    top: 0;
-    bottom: 0;
+ 
   }
 
   // &__navbar {
