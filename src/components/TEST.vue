@@ -4,6 +4,16 @@
       <!-- <router-link :to="{ name: 'main-block' }"> -->
       <p>{{ menubar }}</p>
       <p>test</p>
+      <iframe
+        src="https://www.imdb.com/video/imdb/vi2959588889/imdb/embed?autoplay=false&width=854"
+        width="1840"
+        height="480"
+        allowfullscreen="true"
+        mozallowfullscreen="true"
+        webkitallowfullscreen="true"
+        frameborder="no"
+        scrolling="no"
+      ></iframe>
       <!-- </router-link> -->
     </div>
   </div>

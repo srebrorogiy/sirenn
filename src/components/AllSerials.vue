@@ -11,8 +11,7 @@
         </div>
       </div>
 
-      <!-- <img v-if="" :src="" alt="" /> -->
-      <router-link to="/movies">фильмы</router-link>
+      <router-link to="/serials">сериалы</router-link>
       <!-- <h3 v-on:click="getAllMovies">все фильмы</h3> -->
       <!-- <P>{{movie}}</P> -->
 
@@ -31,8 +30,8 @@
 import axios from "axios";
 import Vue from "vue";
 import Component from "vue-class-component";
-import Menu from "./Menu.vue";
-import SearchItem from "./SearchItem.vue";
+import MenuBlock from "./Menu.vue";
+import SearchBlock from "./SearchItem.vue";
 
 const MoviesProps = Vue.extend({
   props: {
@@ -42,8 +41,8 @@ const MoviesProps = Vue.extend({
 
 @Component({
   components: {
-    Menu,
-    SearchItem,
+    MenuBlock,
+    SearchBlock,
   },
 })
 export default class AllMovies extends MoviesProps {

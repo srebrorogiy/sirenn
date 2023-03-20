@@ -8,20 +8,25 @@
     <router-link style="text-decoration: none; color: inherit" to="/movies">
       <h3>Все фильмы</h3>
     </router-link>
-    <div class="container-category-mov-items">
-      <div
-        v-for="item in itemMovies.slice(0, 14)"
-        :key="item.id"
-        class="item-mov"
+    <div class="category-movitems">
+      <split-carousel
+        v-bind:autoplay="false"
+        v-bind:item-width="160"
+        v-bind:height="300"
+        :display-amount="5"
       >
-        <img :src="item.image" alt="poster" class="style-poster" />
-        <p>{{ item.title }}</p>
-        <!-- <p>{{ item.rank }}</p> -->
-      </div>
+        <split-carousel-item
+          v-for="item in itemMovies.slice(0, 14)"
+          :key="item.id"
+        >
+          <img :src="item.image" alt="poster" class="style-poster" />
+
+          <p class="container__title">
+            {{ item.title }}
+          </p>
+        </split-carousel-item>
+      </split-carousel>
     </div>
-    <!-- </section> -->
-    <!-- </div> -->
-    <!-- </div> -->
   </div>
 </template>
 
@@ -29,15 +34,21 @@
 import axios from "axios";
 import Vue from "vue";
 import Component from "vue-class-component";
+import { SplitCarousel, SplitCarouselItem } from "vue-split-carousel";
 
-const MoviesProps = Vue.extend({
-  props: {
-    itemMovies: Object,
+// const MoviesProps = Vue.extend({
+// props: {
+// itemMovies: Object,
+// },
+// });
+
+@Component({
+  components: {
+    SplitCarousel,
+    SplitCarouselItem,
   },
-});
-
-@Component
-export default class Movies extends MoviesProps {
+})
+export default class Movies extends Vue {
   name = "categoryMovies";
   message = "pizdec";
 
@@ -45,7 +56,8 @@ export default class Movies extends MoviesProps {
     alert(this.message);
   }
 
-  // movieItem: any =
+  itemMovies: any = null;
+
   data() {
     return {
       itemMovies: [],
@@ -54,7 +66,7 @@ export default class Movies extends MoviesProps {
 
   mounted() {
     axios
-      .get("https://imdb-api.com/en/API/Top250Movies/k_12itu7xr")
+      .get("https://imdb-api.com/ru/API/Top250Movies/k_12itu7xr")
       .then((response) => (this.itemMovies = response.data.items));
     return this.itemMovies;
   }
@@ -62,10 +74,11 @@ export default class Movies extends MoviesProps {
 </script>
 
 <style lang="scss">
-.container-category-mov-items {
+.category-movitems {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   overflow-block: hidden;
   margin-left: 20px;
   h3 {
@@ -82,5 +95,11 @@ export default class Movies extends MoviesProps {
     // display: block;
     // width: 140px;
   }
+  // .container-title {
+  //   overflow-wrap: break-word;
+  //   font-size: 15px;
+  //   margin-top: 10px;
+  //   margin-right: 10px;
+  // }
 }
 </style>

@@ -1,9 +1,7 @@
 <template>
   <div class="main-block">
     <div class="container-flex">
-      <header>
-        <HeaderBlock />
-      </header>
+      <HeaderBlock />
       <MainBlock />
       <footer>
         <div class="container_flex_footer">
@@ -36,27 +34,28 @@ export default class MainWrapper extends Vue {
 </script>
 
 <style lang="scss">
-header {
-  width: 100%;
-  //  position: fixed;
-  //  margin-top: 60px;
-  height: 60px;
-  // position: fixed;
-  // margin-top: 60px;
-  // height: 60px;
-  // background: #fff;
-  // z-index: 1000;
-  // padding-top: 1rem;
-  // padding-bottom: 1rem;
-  // .container_flex_head {
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: space-between;
-  // align-items: center;
-  // width: 1140px;
-  // margin-left: auto;
-  // margin-right: auto;
-}
+// header {
+// width: 100%;
+//  position: fixed;
+//  margin-top: 60px;
+// height: 60px;
+// position: fixed;
+// margin-top: 60px;
+// height: 60px;
+// background: #fff;
+// z-index: 1000;
+// padding-top: 1rem;
+// padding-bottom: 1rem;
+// .container_flex_head {
+// display: flex;
+// flex-direction: row;
+// justify-content: space-between;
+// align-items: center;
+// width: 1140px;
+// margin-left: auto;
+// margin-right: auto;
+// position: absolute;
+// }
 
 footer {
   background: rgb(212, 112, 47);
@@ -75,5 +74,18 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+  // .promo_banner {
+  //   background-image: url("../assets/img/promo1.jpg");
+  //   background-position: center center;
+  //   /* определяет размер изображения на странице */
+  //   background-size: cover;
+  //   /* свойство устанавливает, будет ли повторяться изображение и каким образом */
+  //   background-repeat: no-repeat;
+  //   /* cвойство определяет, будет ли фоновое изображение прокручиваться
+  // вместе с остальной частью страницы или будет фиксированным */
+  //   background-attachment: fixed;
+  //   height: 1000px;
+  //   width: 1000px;
+  // }
 }
 </style>

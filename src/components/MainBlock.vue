@@ -2,10 +2,9 @@
   <div class="block-content">
     <div class="container">
       <Suggestions />
-      <Wishlist />
       <CategoryMovies />
       <CategorySerials />
-      <Genres />
+      <!-- <Genres /> -->
     </div>
   </div>
 </template>
@@ -14,18 +13,18 @@
 import Vue from "vue";
 import Component from "vue-class-component";
 import Suggestions from "./Suggestions.vue";
-import Wishlist from "./Wishlist.vue";
 import CategoryMovies from "./CategoryMovies.vue";
 import CategorySerials from "./CategorySerials.vue";
-import Genres from "./Genres.vue";
+// import Genres from "./Genres.vue";
+import PromoBanner from "./PromoBanner.vue";
 
 @Component({
   components: {
     Suggestions,
-    Wishlist,
     CategoryMovies,
     CategorySerials,
-    Genres,
+    // Genres,
+    PromoBanner,
   },
 })
 export default class MainBlock extends Vue {
@@ -36,10 +35,5 @@ export default class MainBlock extends Vue {
 <style lang="scss">
 .block-content {
   flex: 1;
-}
-
-.container {
-  width: 1140px;
-  // display: flex;
 }
 </style>

@@ -2,7 +2,7 @@
   <div class="block-suggest">
     <div class="container">
       <section>
-        <h2>genres</h2>
+        <h2>По жанрам</h2>
         <div class="styles_carousel">
           <div class="container_carousel-flex">
             <div v-for="currency in info" :key="currency.id" class="currency">
@@ -64,43 +64,43 @@ h2 {
   margin-bottom: 20px;
 }
 section {
-  background-color: rgb(255, 246, 248);
+  // background-color: rgb(255, 246, 248);
   margin: 10px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
-  border-radius: 10px;
-  box-shadow: inset 5em 1em gold;
-  box-shadow: 7px 5px 5px rgb(210, 193, 255);
+  // border-radius: 10px;
+  // box-shadow: inset 5em 1em gold;
+  // box-shadow: 7px 5px 5px rgb(210, 193, 255);
 }
 .container_carousel-flex {
   display: flex;
   flex-direction: row;
   // align-items: center;
-  justify-content: space-between;
+  // justify-content: space-between;
   // flex-wrap: wrap;
   // overflow-wrap:break-word;
   overflow-block: hidden;
-  .currency {
-    margin-right: 20px;
-    margin-bottom: 10px;
-    text-align: left;
-    display: inline-block;
-    flex-direction: column;
-    .style_title {
-      align-items: center;
-      display: block;
-      width: 140px;
-    }
-    .style-poster {
-      border-radius: 5px;
-      top: 0;
-      bottom: 0;
-      // position: relative;
-      width: 140px;
-      min-width: 140px;
-      height: auto;
-    }
-  }
+  // .currency {
+  //   margin-right: 20px;
+  //   margin-bottom: 10px;
+  //   text-align: left;
+  //   display: inline-block;
+  //   flex-direction: column;
+  //   .style_title {
+  //     align-items: center;
+  //     display: block;
+  //     width: 140px;
+  //   }
+  // .style-poster {
+  //   border-radius: 5px;
+  //   top: 0;
+  //   bottom: 0;
+  //   // position: relative;
+  //   width: 140px;
+  //   min-width: 140px;
+  //   height: auto;
+  // }
 }
+// }
 </style>

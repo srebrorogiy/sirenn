@@ -1,20 +1,15 @@
 <template>
-  <div class="header scroll">
-    <div class="container">
-      <div class="styles_header-block">
-        <div class="flex">
-          <div class="menu_container">
-            <Menu />
-          </div>
-          <div class="search_container">
-            <div class="styles_search">
-              <SearchItem />
-            </div>
-          </div>
+  <header class="header">
+    <div class="container-flex">
+      <div class="container">
+        <div class="header__container">
+          <Menu />
+          <SearchItem />
         </div>
+        <PromoBanner />
       </div>
     </div>
-  </div>
+  </header>
 </template>
 
 <script lang="ts">
@@ -22,11 +17,13 @@ import Vue from "vue";
 import Component from "vue-class-component";
 import SearchItem from "./SearchItem.vue";
 import Menu from "./Menu.vue";
+import PromoBanner from "./PromoBanner.vue";
 
 @Component({
   components: {
     SearchItem,
     Menu,
+    PromoBanner,
   },
 })
 export default class HeaderBlock extends Vue {
@@ -36,43 +33,26 @@ export default class HeaderBlock extends Vue {
 
 <style lang="scss">
 .header {
-  top: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  align-content: center;
-}
-/**header {
- 
-
-  .header-block {
-    // background-color: rgb(204, 94, 112);
-    // width: 1140px;
-    align-content: center;
-
-    .container {
-      // width: 100%;
-      .flex {
-        // width: 1140px;
-        display: flex;
-        align-items: center;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-      }
-    }
+  width: 100%;
+  background-image: url("https://m.media-amazon.com/images/M/MV5BNTZmM2EwOWYtNjk4Ny00OTc4LWEwYjUtMWMwMDVkMjUyNzZkXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_Ratio1.5000_AL_.jpg");
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+  @media (min-width: 768px) {
+    background-image: url("https://m.media-amazon.com/images/M/MV5BNTZmM2EwOWYtNjk4Ny00OTc4LWEwYjUtMWMwMDVkMjUyNzZkXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_Ratio1.5000_AL_.jpg");
+    background-position: center;
+    background-size: cover;
   }
-
-  .styles_header-block {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  @media (min-width: 1205px) {
+    background-image: url("https://m.media-amazon.com/images/M/MV5BNTZmM2EwOWYtNjk4Ny00OTc4LWEwYjUtMWMwMDVkMjUyNzZkXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_Ratio1.5000_AL_.jpg");
+    background-size: cover;
+    background-position: center;
   }
-}**/
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 </style>

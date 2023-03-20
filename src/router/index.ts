@@ -2,8 +2,9 @@ import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 
 import MainWrapper from "../components/MainWrapper.vue";
-import Test from "../components/TEST.vue";
+// import Test from "../components/TEST.vue";
 import AllMovies from "../components/AllMovies.vue";
+import AllSerials from "../components/AllSerials.vue";
 
 Vue.use(VueRouter);
 
@@ -14,14 +15,24 @@ const routes: Array<RouteConfig> = [
     component: MainWrapper,
   },
   {
-    path: "/test",
-    name: "Test",
-    component: Test,
+    path: "/serials",
+    name: "Serials",
+    component: AllSerials,
   },
   {
     path: "/movies",
     name: "Movies",
     component: AllMovies,
+  },
+  {
+    path: "/films",
+    name: "menu-movies",
+    component: AllMovies,
+  },
+  {
+    path: "/serials",
+    name: "MenuSerials",
+    component: AllSerials,
   },
 ];
 

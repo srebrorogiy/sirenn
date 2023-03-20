@@ -1,13 +1,6 @@
 <template>
-  <div class="footer-block">
-    <div class="container">
-      <div class="footer-flex">
-        <!-- <h1>Footer</h1> -->
-        <div class="footer_contacts">
-          <Contacts />
-        </div>
-      </div>
-    </div>
+  <div class="footer">
+    <Contacts />
   </div>
 </template>
 
@@ -27,9 +20,10 @@ export default class FooterBlock extends Vue {
 </script>
 
 <style lang="scss">
-.footer-block {
+.footer {
   margin-top: 1rem;
-  // background-color: rgb(36, 6, 15);
   align-content: center;
+  height: 200px;
+  color: #fffbfc;
 }
 </style>
