@@ -1,5 +1,5 @@
 <template>
-    <div class="container-card"></div>
+  <div class="container-card"></div>
 </template>
 
 <script lang="ts">
